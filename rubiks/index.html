@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Gloria+Hallelujah|Indie+Flower|Josefin+Sans|Modak|Montserrat|Nosifer|Oswald|Roboto+Condensed|Saira+Extra+Condensed|Shadows+Into+Light|Ubuntu" rel="stylesheet">
+</head>
+<script src="script.js"></script>
+<body>
+<div class="container">
+  <div class="title">
+    <p class="alpha">
+      STOP-WATCH
+    </p>
+  </div>
+  <div class="box">
+    <div class="sup">
+        <div class="min">
+            <div class="head">
+                <p class="fontHead">
+                    MIN
+                </p>
+            </div>
+            <div class="bot">
+              <p class="font" id=test2>
+                00
+
+              </p>
+            </div>
+        </div>
+        <div class="gap" style="left:12vw;">
+          <p class="font">
+                &colon;
+          </p>
+        </div>
+        <div class="sec" >
+            <div class="head">
+              <p class="fontHead">
+                  SEC
+              </p>
+            </div>
+            <div class="bot">
+              <p class="font" id=test1>
+                00
+
+              </p>
+            </div>
+        </div>
+        <div class="gap" style="right:12vw;">
+          <p class="font">
+                &colon;
+          </p>
+        </div>
+        <div class="ms">
+          <div class="head">
+            <p class="fontHead">
+                CS
+            </p>
+          </div>
+          <div class="bot">
+            <p class="font" id=test>
+              00
+
+            </p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <div class="reset" onclick="reset()">
+      <p class="fontButton">
+        Reset
+      </p>
+    </div>
+    <div class="start" onclick=start()>
+      <p class="fontButton">
+        Start
+      </p>
+    </div>
+    <div class="stop" onclick="clearInterval(Interval)">
+      <p class="fontButton">
+        Stop
+      </p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+<style>
+.cover{
+  height:100vh;
+  background-image: url('/home/abhi/Desktop/aa.jpg');
+  background-size: cover;
+  width:100vw;
+}
+
+.height{
+
+  position:absolute;
+  margin-top: 20vh;
+  width:20vw;
+  height:40vh;
+  background-color: rgba(000,200.200,10);
+}
+</style>
+<div class="cover">
+<p>Click the button to display the millisecond of a date time, after setting the millisecond.</p>
+
+<button onclick="ab()">Try it</button><button onclick="abc()">stop</button>
+<div class="height" style="margin-left:20vw;" ><p id=test2>0</p></div>
+
+<div class="height" style="margin-right:20vw;position:absolute;"><p  id=test1>0</p></div>
+<div class="height" style="margin-right:20vw;" ><p id=test>0</p></div>
+</div>
+<script>
+
+
+
+
+
+/*
+function abc(){
+
+
+var xElement = null;
+var xElement1 = null;
+var xElement2 = null;
+
+ xElement2.innerHTML = xVal2;
+  xElement1.innerHTML = xVal1%60;
+  xElement.innerHTML = xVal%1000;
+
+xElement = document.getElementById("test");
+xElement1 = document.getElementById("test1");
+xElement2 = document.getElementById("test2");
+
+
+
+
+
+}
+*//*
+function abc(){
+  var sVal=0;
+  var sVal1=0;
+  var sVal2=0;
+
+
+  var sInterval = window.setInterval(stopWatch, 1);
+  var sInterval1 = window.setInterval(stopWatch1, 1000);
+  var sInterval2 = window.setInterval(stopWatch2, 60000);
+
+
+}*/
+
+
+
+
+function ab(){
+var xVal = 0;
+var xVal1 = 0;
+var xVal2 = 0;
+
+var xElement = null;
+var xElement1 = null;
+var xElement2 = null;
+
+xElement = document.getElementById("test");
+xElement1 = document.getElementById("test1");
+xElement2 = document.getElementById("test2");
+
+var Interval = window.setInterval(startWatch, 1);
+var Interval1 = window.setInterval(startWatch1, 1000);
+var Interval2 = window.setInterval(startWatch2, 60000);
+
+
+
+
+
+
+function startWatch2(){
+
+
+      xVal1 += 01;
+
+    xElement2.innerHTML = xVal2;
+
+}
+function startWatch1(){
+
+
+xVal1 += 01;
+
+    xElement1.innerHTML = xVal1%60;
+
+}
+function startWatch(){
+
+
+      xVal += 01;
+
+    xElement.innerHTML = xVal%1000;
+
+}}
+
+/*
+
+function stopWatch2(){
+
+    sval2 += 01;
+    xElement2.innerHTML = xVal2-sVal2;
+
+}
+function stopWatch1(){
+
+    sVal1 += 01;
+    xElement1.innerHTML = (xVal1-sVal1)%60;
+
+}
+function stopWatch(){
+
+    sVal += 01;
+    xElement.innerHTML = (xVal-sVal)%1000;
+
+}}
+
+*/
+
+</script>
+
+</body>
+</html>
